@@ -1,1 +1,1 @@
-# praticas-pds2-ifsc
+# Práticas em desenvolvimento de sistemas 2
