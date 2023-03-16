@@ -1,0 +1,45 @@
+1) Em programação, uma biblioteca é um conjunto de código pré-escrito que pode ser usado para executar tarefas comuns. Essas tarefas podem incluir coisas como lidar com entrada e saída de dados, criptografia, manipulação de strings, operações matemáticas e muito mais. As bibliotecas são compostas de funções e classes que podem ser usadas em um programa para economizar tempo e evitar a necessidade de escrever código repetitivo.
+
+Já uma API (Application Programming Interface) é um conjunto de regras, protocolos e ferramentas para criar aplicativos de software. É uma interface de programação que permite que diferentes programas se comuniquem uns com os outros. As APIs são usadas para simplificar o processo de desenvolvimento de software, permitindo que desenvolvedores usem as funcionalidades de um software específico em seus próprios aplicativos, sem precisar conhecer todos os detalhes do software subjacente.
+
+2) MVC: Importante estrutura de projeto que visa uma melhor coesão e manutenção facilmente aplicada dentro de um projeto. Permite separar o projeto em camadas separadas para orientar na organização, onde uma camada não precisa necessariamente interferir na outra.
+
+DAO: Classes DAO são responsáveis por trocar informações com o SGBD e fornecer operações CRUD e de pesquisas, elas devem ser capazes de buscar dados no banco e transformar esses em objetos ou lista de objetos.
+
+Singleton: Padrão de projeto criacional, que garante que apenas um objeto desse tipo exista e forneça um único ponto de acesso a ele para qualquer outro código. Dessa forma, não são criadas várias instâncias por vez de uma mesma classe.
+
+3) JDBC significa Java Database Connectivity e é uma API (Application Programming Interface) padrão para conectar e interagir com bancos de dados relacionais usando a linguagem de programação Java.
+
+Em outras palavras, o JDBC é uma coleção de classes e interfaces que permite que os desenvolvedores criem aplicativos Java que possam se conectar a diferentes tipos de bancos de dados, como MySQL, Oracle, SQL Server, PostgreSQL e outros.
+
+Com o JDBC, os desenvolvedores podem escrever código Java que se comunica com o banco de dados para executar várias operações, como consulta, inserção, atualização e exclusão de dados. O JDBC também oferece recursos avançados, como transações, gerenciamento de conexão, processamento de instruções preparadas e tratamento de exceções.
+
+4) CRUD é um acrônimo que significa Create, Read, Update e Delete. É um conjunto de operações básicas que podem ser realizadas em um banco de dados ou sistema de gerenciamento de informações para manipular dados.
+
+Os quatro métodos que geralmente são implementados em classes DAO (Data Access Object) também se relacionam com as operações CRUD:
+
+Create: O método create na classe DAO é responsável por inserir um novo registro na fonte de dados, ou seja, realizar a operação de "C" do CRUD.
+Read: O método read na classe DAO é usado para recuperar informações da fonte de dados com base em um critério de pesquisa, ou seja, realizar a operação de "R" do CRUD.
+Update: O método update na classe DAO é responsável por atualizar um registro existente na fonte de dados, ou seja, realizar a operação de "U" do CRUD.
+Delete: O método delete na classe DAO é responsável por excluir um registro existente na fonte de dados, ou seja, realizar a operação de "D" do CRUD.
+Portanto, a implementação dos quatro métodos em uma classe DAO permite que um desenvolvedor realize todas as operações básicas de manipulação de dados em uma fonte de dados, seguindo o padrão CRUD.
+
+5) A classe Connection é responsável por estabelecer uma conexão com o banco de dados, permitindo que a aplicação envie e receba informações.
+
+A classe Statement é utilizada para enviar comandos SQL simples ao banco de dados, como por exemplo, realizar uma consulta (SELECT), inserir um novo registro (INSERT) ou atualizar um registro existente (UPDATE).
+
+Já a classe PreparedStatement é utilizada para enviar comandos SQL mais complexos, que envolvem a utilização de parâmetros, como por exemplo, inserir ou atualizar registros com valores dinâmicos.
+
+Em resumo, essas três classes são importantes para a manipulação de dados em um banco de dados, permitindo que uma aplicação envie comandos SQL para o banco de dados e receba os resultados de volta.
+
+6) Para retornar dados de um banco de dados, é possível utilizar tanto a classe Statement quanto a classe PreparedStatement em Java.
+
+A principal diferença entre elas é que a classe PreparedStatement é pré-compilada, o que significa que o código SQL passado para o banco de dados é pré-compilado antes da execução. Isso oferece vantagens em termos de desempenho e segurança, já que o banco de dados pode otimizar a execução do código SQL.
+
+Por outro lado, a classe Statement não é pré-compilada e, portanto, é mais lenta e menos segura do que a classe PreparedStatement.
+
+Dessa forma, a classe PreparedStatement é recomendada quando se espera um retorno de dados do banco de dados, pois oferece melhor desempenho e segurança. Além disso, ela também é mais fácil de usar para consultas que precisam de parâmetros dinâmicos.
+
+Porém, em algumas situações em que não há necessidade de parâmetros dinâmicos ou em consultas mais simples, a classe Statement pode ser suficiente e mais fácil de implementar.
+
+7) Swing é uma biblioteca de componentes de GUI para Java, enquanto o WindowBuilder é uma ferramenta de design visual que permite criar interfaces gráficas de usuário para aplicativos Java, incluindo aplicativos Swing.
