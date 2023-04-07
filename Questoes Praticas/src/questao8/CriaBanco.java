@@ -15,7 +15,7 @@ public class CriaBanco {
         String password = "aluno"; // senha do usuário
         
         // Nome do banco de dados a ser criado
-        String databaseName = "pds2";
+        String databaseName = "dbpds";
         
         // Nome da tabela a ser criada
         String tablePerson = "pessoa";
@@ -34,9 +34,6 @@ public class CriaBanco {
             // Conexão com o banco de dados
             conexao = DriverManager.getConnection(url, user, password);
             statement = conexao.createStatement();
-            
-            // Deleta o banco de dados para não estourar erro ao criar novamente
-            statement.executeUpdate("DROP DATABASE " + databaseName);
             
             // Criação do banco de dados
             statement.executeUpdate("CREATE DATABASE " + databaseName);

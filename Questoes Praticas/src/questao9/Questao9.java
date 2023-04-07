@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
@@ -29,7 +30,7 @@ public class Questao9 extends JFrame {
 	String password = "aluno"; // senha do usuário
 
 	// Nome do banco de dados a ser criado
-	String databaseName = "pds2";
+	String databaseName = "dbpds";
 
 	/**
 	 * Launch the application.
@@ -97,9 +98,10 @@ public class Questao9 extends JFrame {
 					// Execução da query SQL
 					statement.executeUpdate();
 
-					System.out.println("Registro adicionado com sucesso!");
+					JOptionPane.showMessageDialog(null, "Pessoa adicionada com sucesso!");
 				} catch (SQLException e1) {
 					e1.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Houve um erro, tente novamente.");
 				} finally {
 					// Fechamento da conexão com o banco de dados
 					try {
@@ -111,6 +113,7 @@ public class Questao9 extends JFrame {
 						}
 					} catch (SQLException e1) {
 						e1.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Houve um erro, tente novamente.");
 					}
 				}
 
